@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Eventos com formulário</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/formulario.js"></script>
+    </head>
+    <body>
+        <!-- conteúdo da página -->
+        <div class="container mt-5">
+            <!-- título visual -->
+            <h1>Calculadora de calorias</h1>
+            <form>
+                <!-- input para nome do alimento (forms) -->
+                <div class="mb-3">
+                    <label class="form-label" for="alimento">Alimento</label>
+                    <input type="text" id="alimento" class="form-control" placeholder="Informe o alimento">
+                </div>
+
+                <!-- input para carboidratos -->
+                 <div class="mb-3">
+                    <label class="form-label" for="carboidratos">Carboidratos</label>
+                    <input type="text" id="carboidratos" class="form-control" placeholder="Gramas de Carboidratos">
+                </div>
+
+                <!-- input para proteína -->
+                 <div class="mb-3">
+                    <label class="form-label" for="proteina">Proteína</label>
+                    <input type="text" id="proteina" class="form-control" placeholder="Gramas de Proteína">
+                </div>
+
+                <!-- input para gordura -->
+                 <div class="mb-3">
+                    <label class="form-label" for="gordura">Gordura</label>
+                    <input type="text" id="gordura" class="form-control" placeholder="Gramas de gordura">
+                </div>
+
+                <!-- Botão de ação de cálculo -->
+                <button type="button" id="btn-calcular" class="btn btn-success">Calcular calorias</button>
+
+                <!-- div para exibir mensagem do JS na tela -->
+                <div id="mensagem" class="mt-3"></div>
+
+            </form>
+        </div>
+    </body>
+</html>
